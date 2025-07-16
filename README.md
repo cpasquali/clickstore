@@ -1,12 +1,56 @@
-# React + Vite
+🛍️ ClickStore
+ClickStore es una aplicación web desarrollada con React y Vite que simula una tienda online moderna. Este proyecto sirve como base para un e-commerce, incluyendo funcionalidades típicas como navegación por categorías, visualización de productos y manejo de carrito de compras.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tecnologías utilizadas
+React – Biblioteca principal para la interfaz de usuario
 
-Currently, two official plugins are available:
+Vite – Empaquetador ultrarrápido para desarrollo moderno con React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ESLint – Reglas de estilo y calidad de código
 
-## Expanding the ESLint configuration
+JavaScript (con JSX)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+📁 Estructura del proyecto
+csharp
+Copiar
+Editar
+ClickStore/
+├── public/              # Archivos estáticos
+├── src/                 # Código fuente principal
+│   ├── assets/          # Imágenes y recursos
+│   ├── components/      # Componentes reutilizables (Navbar, ProductCard, etc.)
+│   ├── pages/           # Páginas principales (Home, Store, Cart)
+│   ├── context/         # Contexto global (manejo de carrito)
+│   ├── App.jsx          # Componente raíz
+│   └── main.jsx         # Punto de entrada de la app
+├── index.html           # HTML principal
+├── package.json         # Dependencias y scripts
+└── vite.config.js       # Configuración de Vite
+📦 Instalación
+Clona este repositorio:
+
+bash
+Copiar
+Editar
+git clone https://github.com/cpasquali/clickstore.git
+cd clickstore
+Instala las dependencias:
+
+bash
+Copiar
+Editar
+npm install
+Inicia el entorno de desarrollo:
+
+bash
+Copiar
+Editar
+npm run dev
+⚙️ Scripts disponibles
+npm run dev – Ejecuta el servidor de desarrollo
+
+npm run build – Compila el proyecto para producción
+
+npm run preview – Previsualiza el build localmente
+
+npm run lint – Ejecuta ESLint para ver errores de estilo
