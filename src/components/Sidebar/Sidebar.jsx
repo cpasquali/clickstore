@@ -7,7 +7,6 @@ export const Sidebar = ({
   setProductList,
 }) => {
   const [form, setForm] = useState({
-    id: productList.length + 1,
     titulo: "",
     precio: 0,
     imagen: "",
@@ -70,7 +69,14 @@ export const Sidebar = ({
     if (!titulo || !precio || !imagen || !genero) {
       return;
     }
-    setProductList([...productList, form]);
+    setProductList([...productList, { ...form, id: productList.length + 1 }]);
+
+    setForm({
+      titulo: "",
+      precio: 0,
+      imagen: "",
+      genero: "",
+    });
   };
 
   return (
