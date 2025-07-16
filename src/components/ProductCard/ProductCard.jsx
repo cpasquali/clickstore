@@ -6,7 +6,7 @@ export const ProductCard = ({ product, onDelete }) => {
       <img src={product.imagen} alt="" />
       <div className="card-info">
         <p>{product.titulo}</p>
-        <p>$ {product.precio.toLocaleString().replaceAll(",", ".")}</p>
+        <p>$ {product.precio}</p>
       </div>
       <button onClick={() => onDelete(product)} className="card-btn">
         Eliminar

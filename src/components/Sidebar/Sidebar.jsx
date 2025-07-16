@@ -8,7 +8,7 @@ export const Sidebar = ({
 }) => {
   const [form, setForm] = useState({
     titulo: "",
-    precio: 0,
+    precio: "",
     imagen: "",
     genero: "",
   });
@@ -73,9 +73,7 @@ export const Sidebar = ({
 
     setForm({
       titulo: "",
-      precio: 0,
-      imagen: "",
-      genero: "",
+      precio: "",
     });
   };
 
@@ -102,11 +100,13 @@ export const Sidebar = ({
             type="text"
             placeholder="Nombre del producto..."
             onChange={(e) => handleInputsForm(e, "titulo")}
+            value={form.titulo}
           />
           <input
             type="text"
             placeholder="Precio del producto..."
             onChange={(e) => handleInputsForm(e, "precio")}
+            value={form.precio}
           />
           <div className="file-upload">
             <input
