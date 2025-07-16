@@ -92,6 +92,7 @@ export const Sidebar = ({
           <option value="TV">TV</option>
           <option value="Tablets">Tablets</option>
           <option value="Accesorios">Accesorios</option>
+          <option value="Componentes">Componentes de PC</option>
         </select>
       </section>
       <section className="add-product-container">
@@ -141,6 +142,7 @@ export const Sidebar = ({
             <option value="TV">TV</option>
             <option value="Tablets">Tablets</option>
             <option value="Accesorios">Accesorios</option>
+            <option value="Componentes">Componentes de PC</option>
           </select>
           <button className="btn-upload" type="submit">
             Agregar Producto
