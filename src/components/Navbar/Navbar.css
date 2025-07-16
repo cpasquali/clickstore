@@ -1,0 +1,63 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  transition: all 0.3s;
+  padding-left: 40px;
+  padding-right: 40px;
+  flex-shrink: 0;
+}
+
+.navbar h2 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+}
+
+li {
+  cursor: pointer;
+}
+
+li::after {
+  content: "";
+  display: block;
+  width: 0;
+  background-color: black;
+  height: 2px;
+  transition: all ease-out 0.3s;
+}
+
+li:hover::after {
+  width: 100%;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  font-size: 22px;
+  border-radius: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.btn ion-icon {
+  transition: all 0.3s;
+}

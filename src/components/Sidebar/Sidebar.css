@@ -1,0 +1,234 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 25%;
+  height: 100%;
+  padding-top: 20px;
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+.product-filter-container h2,
+.gategory-container h2 {
+  font-weight: 400;
+}
+
+.sidebar.checkout {
+  justify-content: space-between;
+  background-color: white;
+}
+
+.sidebar.checkout h2 {
+  width: 300px;
+  font-weight: 400;
+}
+
+select {
+  height: 40px;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: #1a1a1a;
+  padding-left: 10px;
+  border: 1px solid #3333334f;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn-upload {
+  height: 40px;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: #1a1a1a;
+  padding-left: 10px;
+  border: 1px solid #3333334f;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.gategory-container select {
+  width: 320px;
+}
+
+.input.email {
+  height: 40px;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: #1a1a1a;
+  padding-left: 10px;
+  border: 1px solid #3333334f;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gategory-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  width: 200px;
+  position: fixed;
+}
+
+.product-filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+  top: 200px;
+  width: 200px;
+  position: fixed;
+}
+
+.add-product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  top: 210px;
+  width: 200px;
+  position: fixed;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form input[type="text"] {
+  height: 40px;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: #1a1a1a;
+  padding-left: 10px;
+  border: 1px solid #3333334f;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.file-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.file-button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 10px;
+  height: 40px;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  color: #1a1a1a;
+  border: 1px solid #3333334f;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.inputs-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.btn-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 314px;
+  height: 40px;
+  cursor: pointer;
+  color: #1a1a1a;
+  margin-top: 10px;
+  background-color: #ffffff;
+  border: 1px solid #3333334f;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.input-p-container {
+  position: relative;
+}
+
+.input-p-container p {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+}
+
+.sidebar-top {
+  flex-direction: column;
+}
+
+.sidebar-top,
+.sidebar-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sidebar-bottom {
+  padding-bottom: 10px;
+}
+
+.sidebar-bottom p {
+  width: 120px;
+}
+
+.sidebar-bottom button {
+  height: 40px;
+  width: 150px;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  border: 1px solid #3333334f;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn-delete.all {
+  height: 40px;
+  width: 300px;
+  background-color: red;
+  border-radius: 4px;
+  color: #fff;
+  padding-left: 10px;
+  border: 1px solid #3333334f;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.img-preview {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
