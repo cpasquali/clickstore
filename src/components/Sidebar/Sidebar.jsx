@@ -23,7 +23,7 @@ export const Sidebar = ({
     }
   };
 
-  /* localStorage.removeItem("product-list"); */
+  /*   localStorage.removeItem("product-list"); */
 
   const uploadImage = async (image) => {
     const CLOUD_NAME = "dobsdzlzl";
@@ -65,8 +65,8 @@ export const Sidebar = ({
 
   const addProduct = (e, form) => {
     e.preventDefault();
-    const { titulo, precio, imagen, genero } = form;
-    if (!titulo || !precio || !imagen || !genero) {
+    const { titulo, precio, genero } = form;
+    if (!titulo || !precio || !genero) {
       return;
     }
     setProductList([...productList, { ...form, id: productList.length + 1 }]);
